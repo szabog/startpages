@@ -1,0 +1,172 @@
+/*
+	External content
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+
+/*
+	General properties
+*/
+
+* {
+	font-family: 'Nanum Gothic Coding', monospace;
+	margin: 0px;
+	padding: 0px;
+	//border: 1px solid black;
+}
+
+body, html {
+	height: 100%;
+	display: grid;
+	overflow: hidden;
+	//background: #4c5163;
+	background: url('../content/images/background.png') no-repeat 0 0;
+}
+
+/*
+	Wrapper
+*/
+
+.center { margin: auto; }
+
+/*
+	Date & Time
+*/
+
+#current-time {
+	color: #bcbdc2;
+	font-size: 16px;
+}
+
+#date {
+	color: #bcbdc2;
+	font-size: 16px;
+}
+
+/*
+	Terminal
+*/
+
+.window {
+	background: rgb(7, 29, 34);
+	padding: 35px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #D6D6D6;
+	box-shadow: 10px 10px rgba(7, 29, 34, 0.5);
+	height: auto;
+	width: auto;
+}
+
+.termSym {
+	color: white;
+	font-size: 18px;
+}
+
+.termTxt {
+	color: #888a93;
+	font-size: 16px;
+}
+
+/*
+	Tree view
+*/
+
+.tree {
+	color: #888a93;
+}
+
+.dir {
+	color: #999a93;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.link a {
+	text-decoration: none;
+	color: #afb0b6;
+	line-height: 18px;
+}
+.link a:hover { text-decoration: underline; }
+
+/*
+	Cursor
+*/
+
+/*.blinking-cursor {
+	font-weight: 100;
+	font-size: 16px;
+	color: #2E3D48;
+	-webkit-animation: 2s blink step-end infinite;
+	-moz-animation: 2s blink step-end infinite;
+	-ms-animation: 2s blink step-end infinite;
+	-o-animation: 2s blink step-end infinite;
+	animation: 2s blink step-end infinite;
+}
+
+@keyframes "blink" {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: #bcbdc2;
+	}
+}
+
+@-moz-keyframes "blink" {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: #bcbdc2;
+	}
+}
+
+@-webkit-keyframes "blink" {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: #bcbdc2;
+	}
+}
+
+@-ms-keyframes "blink" {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: #bcbdc2;
+	}
+}
+
+@-o-keyframes "blink" {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: #bcbdc2;
+	}
+}*/
+
+/*
+	Search
+*/
+
+.search-block {
+	display: inline-block;
+	font-size: 16px;
+	width: 82%;
+}
+.search-block input {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 16px;
+	background: transparent;
+	border: 1px solid transparent;
+	color: #bcbdc2;
+	caret-color: transparent;
+}
+.search-block input:hover, .search-block input:focus {
+	background: transparent;
+}

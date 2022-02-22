@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>StartPage</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="content/images/favicon.ico">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+
+<!--
+	Header
+-->
+
+<div class="wrapper">
+	<div class="header">
+		<ul>time & date.
+			<li>
+				<div class="currentTime"><div id="current-time">Time</div></div>
+				<div class="currentDate"><div id="date">Date</div></div>
+			</li>
+		</ul>
+		<ul>weather.
+			<li>
+				<div class="city"><span id="city"></span></div>
+				<div class="temp"><span id="temperature"></span></div>
+				<div class="forecast"><span id="weather"></span></div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--
+	Logo
+-->
+
+<div id="wrapper">
+	<img id="logo" src="content/images/logo.png"/>
+</div>
+
+<!--
+	Search
+-->
+
+<div class="search-block">
+	<form id="search-form" action="https://duckduckgo.com/?q=" method="get" target="_blank">
+		<input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off" placeholder="search (/? for more options)" />
+		<label for="search"><span id="search-icon" class="fa fa-search"></span></label>
+	</form>
+	<ul id="search-help" class="search-help" style="opacity: 0;"></ul>
+</div>
+
+<!--
+	Links
+-->
+
+<div class="tables">
+	<ul>dev.
+		<li class="links"><a target="_blank" href="https://codepen.io/">codepen</a>/</li>
+		<li class="links"><a target="_blank" href="https://github.com/">github</a>/</li>
+		<li class="links"><a target="_blank" href="https://stackoverflow.com/">stackoverflow</a>/</li>
+	</ul>
+	<ul>email.
+		<li class="links"><a target="_blank" href="https://gmail.com/">gmail</a>/</li>
+		<li class="links"><a target="_blank" href="https://protonmail.com/">protonmail</a>/</li>
+		<li class="links"><a target="_blank" href="https://tutanota.de/">tutanota</a>/</li>
+	</ul>
+	<ul>fun.
+		<li class="links"><a target="_blank" href="https://mixcloud.com/">mixcloud</a>/</li>
+		<li class="links"><a target="_blank" href="https://twitch.tv/">twitch</a>/</li>
+		<li class="links"><a target="_blank" href="https://youtube.com/">youtube</a>/</li>
+	</ul>
+</div>
+<div class="tables">
+	<ul>news.
+		<li class="links"><a target="_blank" href="https://bbc.com/news/">bbc</a>/</li>
+		<li class="links"><a target="_blank" href="https://index.hu/">index</a>/</li>
+		<li class="links"><a target="_blank" href="https://theguardian.com/international/">theguardian</a>/</li>
+	</ul>
+	<ul>social.
+		<li class="links"><a target="_blank" href="https://facebook.com/">facebook</a>/</li>
+		<li class="links"><a target="_blank" href="https://reddit.com/">reddit</a>/</li>
+		<li class="links"><a target="_blank" href="https://twitter.com/">twitter</a>/</li>
+	</ul>
+	<ul>other.
+		<li class="links"><a target="_blank" href="https://discordapp.com/">discord</a>/</li>
+		<li class="links"><a target="_blank" href="https://dropbox.com/">dropbox</a>/</li>
+		<li class="links"><a target="_blank" href="https://openweathermap.org/">openweathermap</a>/</li>
+	</ul>
+</div>
+
+<!--
+	Quotes
+-->
+
+<div class="footer">
+	<div class="quotes">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle-thin fa-stack-2x" style="color:#0b84c1;"></i>
+			<i class="fa fa-quote-left fa-stack-1x"></i>
+		</span>
+		<blockquote>Quotes</blockquote>
+	</div>
+	<div class="cites">
+		<cite>Cites</cite>
+	</div>
+</div>
+
+<!--
+	JavaScript
+-->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

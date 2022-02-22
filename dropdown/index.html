@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>StartPage</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+
+<!--
+	Time & date
+-->
+
+<div id="wrapperTimeDate">
+	<div id="containerTime"><div id="current-time">Time</div></div>
+	<div id="containerDate"><div id="date">Date</div></div>
+</div>
+
+<!--
+	Weather
+-->
+
+<div id="wrapperWeather">
+	<ul>
+		<li>Location: <span id="city"></span></a></li>
+		<li>Temperature: <span id="temperature"></span></a></li>
+		<li>Weather: <span id="weather"></span></a></li>
+</div>
+
+<!--
+	Menu
+-->
+
+<ul id="accordion" class="accordion">
+	<li>
+		<div class="link"><i class="fa fa-mobile"></i>Apps<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://discordapp.com/">Discord</a></li>
+				<li><a target="_blank" href="https://riot.im/app/">Riot</a></li>
+				<li><a target="_blank" href="https://web.skype.com/">Skype</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-code"></i>Development<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://codepen.io/">CodePen</a></li>
+				<li><a target="_blank" href="https://github.com/">GitHub</a></li>
+				<li><a target="_blank" href="https://sourceforge.net/">SourceForge</a></li>
+				<li><a target="_blank" href="https://stackoverflow.com/">Stack Overflow</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-envelope"></i>Email<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://gmail.com/">GMail</a></li>
+				<li><a target="_blank" href="https://gmx.com/">GMX</a></li>
+				<li><a target="_blank" href="https://posteo.de/">Posteo</a></li>
+				<li><a target="_blank" href="https://protonmail.com/">ProtonMail</a></li>
+				<li><a target="_blank" href="https://tutanota.com/">Tutanota</a></li>
+				<li><a target="_blank" href="https://mail.yahoo.com/">Yahoo! Mail</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-play"></i>Entertainment<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://mixcloud.com/">Mixcloud</a></li>
+				<li><a target="_blank" href="https://soundcloud.com/">SoundCloud</a></li>
+				<li><a target="_blank" href="https://twitch.tv/">Twitch</a></li>
+				<li><a target="_blank" href="https://youtube.com/">YouTube</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-globe"></i>News<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://bbc.com/news/">BBC</a></li>
+				<li><a target="_blank" href="https://index.hu/">Index</a></li>
+				<li><a target="_blank" href="https://theguardian.com/international/">The Guardian</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-users"></i>Social<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://4chan.org/">4Chan</a></li>
+				<li><a target="_blank" href="https://facebook.com/">Facebook</a></li>
+				<li><a target="_blank" href="https://plus.google.com/">Google+</a></li>
+				<li><a target="_blank" href="https://reddit.com/">Reddit</a></li>
+				<li><a target="_blank" href="https://twitter.com/">Twitter</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-server"></i>Storage<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://dropbox.com/">Dropbox</a></li>
+				<li><a target="_blank" href="https://onedrive.live.com/about/en-us/login/">OneDrive</a></li>
+				<li><a target="_blank" href="https://drive.google.com/drive/my-drive">Google Drive</a></li>
+			</ul>
+	</li>
+	<li>
+		<div class="link"><i class="fa fa-archive"></i>Other<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a></li>
+			</ul>
+	</li>
+</ul>
+
+<!--
+	Search
+-->
+
+<div id="wrapperSearch">
+	<div class="search-block">
+		<form id="search-form" action="https://duckduckgo.com/?q=" method="get" target="_blank">
+			<input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off" placeholder="search (/? for more options)" />
+			<label for="search"><span id="search-icon" class="fa fa-search"></span></label>
+		</form>
+		<ul id="search-help" class="search-help" style="opacity: 0;"></ul>
+	</div>
+</div>
+
+<!--
+	JavaScript
+-->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+/*
+	External content
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+/*
+	General properties
+*/
+
+* {
+	font-family: 'Exo', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body, html {
+	height: 100%;
+	display: grid;
+	overflow: hidden;
+	background: #4c5163;
+}
+
+/* list properties */
+ul { list-style-type: none; }
+
+/*
+	Wrapper
+*/
+
+.center { margin: auto; }
+
+/*
+	Date & Time properties
+*/
+
+.time {
+	
+	margin: auto;
+	font-size: 82px;
+	font-weight: bold;
+	color: #888a93;
+	width: auto;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.date {
+	margin: auto;
+	font-size: 82px;
+	font-weight: 600;
+	color: #888a93;
+	width: auto;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+/*
+	Search properties
+*/
+
+.search-block {
+	background: #b5b5b5;
+	border-radius: 25px;
+	padding: 10px;
+	width: 580px;
+	height: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.search-block input {
+	width: 100%;
+	font-size: 16px;
+	background: transparent;
+	border: 0px solid transparent;
+	color: #000;
+	padding-left: 10px;
+}
+
+/*
+	Menu properties
+*/
+
+.accordion {
+	margin-top: 60px;
+	display: flex;
+	height: 20px;
+}
+.accordion .link {
+	cursor: pointer;
+	color: #888a93;
+	font-size: 20px;
+	width: 115px;
+	text-align: center;
+}
+.accordion li.open .link { color: #b5b5b5; }
+
+/* Submenu properties */
+.submenu {
+	display: none;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.submenu li { border-bottom: 1px dashed #888a93; }
+.submenu li:first-child { margin-top: 10px; }
+.submenu li:last-child { border-bottom: none; }
+.submenu a {
+	display: block;
+	text-decoration: none;
+	color: #b5b5b5;
+}
+.submenu a:hover { text-decoration: underline; }
